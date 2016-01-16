@@ -1,0 +1,84 @@
+/* Base fix height */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+/* Main container */
+.container {
+  height: 100%;
+  position: static;
+}
+/* Fill */
+.fill {
+  background-color: #eee;
+  height: 100%;
+  overflow: scroll;
+  padding-bottom: 50px;
+  width: auto;
+}
+/* Inline-card */
+.fill .inline-card {
+  background-color: yellow;
+  height: 50px;
+  position: relative;
+  width: 100%;
+}
+/* card-left */
+.fill .inline-card .card-left {
+  background-color: black;
+  display: inline-block;
+  height: 100%;
+  float: left;
+  width: 50px;
+}
+/* card-right */
+.fill .inline-card .card-right {
+  background-color: gray;
+  display: inline-block;
+  height: 100%;
+  width: 50px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+/* card-contents */
+.fill .inline-card .card-contents {
+  height: 50px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-left: 50px;
+  padding-right: 50px;
+  word-break: break-all;
+}
+/* Top */
+.top {
+  background-color: skyblue;
+  height: 50px;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+/* Bottom */
+.bottom {
+  background-color: blue;
+  height: 50px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+/* Left */
+.left {
+  background-color: green;
+  float: left;
+  min-height: 100%;
+  width: 50px;
+}
+/* Right */
+.right {
+  background-color: red;
+  float: right;
+  min-height: 100%;
+  width: 50px;
+}
